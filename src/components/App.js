@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import '../index.css'
 import AboutPage from '../pages/AboutPage'
 import HomePage from '../pages/HomePage';
-import ContactPage from '../pages/ContactPage'
+import LoginSignup from '../pages/LoginSignup'
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
                     </div>
                     <div className='nav-bar'>
                     <Link to="/signup">
-                        SIGN IN
+                        SIGN UP
                     </Link>
                     </div>
                 </Nav>
@@ -44,7 +44,7 @@ function App() {
 
         <Route path="/" exact render={() => <HomePage />} />
         <Route path="/login" exact render={() => <AboutPage />} />
-        <Route path="/signup" exact render={() => <ContactPage />} />
+        <Route path="/signup" exact render={() => <LoginSignup />} />
 
 
         </Router>
